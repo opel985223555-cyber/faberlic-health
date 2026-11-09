@@ -329,6 +329,13 @@ body{background:#f5faf6}
 html[lang="uz-Cyrl"] .hub{font-size:clamp(12px,1.5vw,18px)!important;letter-spacing:-.55px!important;white-space:nowrap}
 html[lang="tj"] .hub{font-size:clamp(14px,1.5vw,20px)!important;white-space:nowrap}
 @media(max-width:640px){html[lang="uz-Cyrl"] .hub{font-size:clamp(12px,3.65vw,14px)!important}html[lang="tj"] .hub{font-size:clamp(15px,4vw,18px)!important}}
+
+/* v46: center both title labels as one balanced desktop header group; keep language on right. */
+@media(min-width:641px){
+  .header .header-inner{justify-content:center!important;column-gap:clamp(22px,4vw,64px)!important;}
+  .header .brand{flex:0 0 auto!important;text-align:center!important;}
+  .header .header-side{flex:0 0 auto!important;text-align:center!important;}
+}
 </style>
 </head>
 <body>
